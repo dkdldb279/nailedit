@@ -1,0 +1,226 @@
+<!DOCTYPE html> <!-- 22061119 최윤정-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+
+      @font-face {
+          font-family : "My font";
+          src : url("./NanumSquareOTF_acR.otf");
+      }
+      * {
+        margin : 0;
+        padding : 0;
+        background-color : #FFB2D0;
+      }
+      body {
+        font-family : 'My font';
+        font-size : 14px;
+        color : white;
+      }
+      li {
+        list-style-type : none;
+      }
+      .clear {
+        clear : both;
+      }
+
+      nav {
+        margin-top : 15px;
+        height : 130px;
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+        font-family : 'My font';
+        font-size : 20px;
+      }
+      .logo {
+        width : 40%;
+        padding-left : 55px;
+      }
+      .menu {
+        width : 60%;
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+      }
+      .menu a {
+        text-decoration : none;
+        color : white;
+        text-transform : uppercase;
+        font-weight : bold;
+        position : relative;
+      }
+      .menu a:before {
+        content : "";
+        position : absolute;
+        left : 0;
+        top : 100%;
+        width : 0;
+        height : 2px;
+        background-color : white;
+        transition : all 0.5s linear;
+      }
+      .menu a:hover:before {
+        width : 100%;
+      }
+      #main_img {
+        width : 100%;
+        height : 200px;
+        background-image : url('image/head.png');
+        background-color : gray;
+        background-repeat : no-repeat;
+        background-position : top center;
+        margin-top : 20px;
+      }
+
+      #contents {
+        width : 0 auto;
+      }
+      #main_contents {
+          width : 0 auto;
+          margin-top : 50px;
+        }
+      #main_contents h3 {
+            font-size : 30px;
+            padding-top : 8px;
+            padding-bottom : 8px;
+            text-align : center;
+          }
+          #main_contents h1 {
+                font-size : 20px;
+                padding-top : 8px;
+                padding-bottom : 8px;
+                text-align : center;
+                color : #C100C1;
+              }
+      #main_contents p {
+        margin : 20px;
+        line-height : 180%;
+        color : #834B83;
+      }
+      #main_contents #figure {
+        text-align : center;
+      }
+      footer {
+        width : 100%;
+        height : 100%;
+        margin-top : 30px;
+      }
+      #footer_box {
+        width : 100%;
+        height : 100%;
+        margin : 0 auto;
+        border : solid 1px white;
+      }
+      #footer_logo {
+        float : left;
+        margin-top : 20px;
+        margin-left : 80px;
+    }
+      #address {
+        float : left;
+        padding : 20px;
+        margin : 0 auto;
+        margin-top : 20px;
+        color : white;
+    }
+      .features {
+        padding : 60px 45px;
+      }
+      .features-inner {
+        max-width : 1200px;
+        margin : 0 auto;
+        display : grid;
+        grid-template-columns : 33% 33% 33%;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+<!-- 내비게이션 -->
+     <nav>
+       <div class="logo">
+         <a href='index.html'><img src='image/logo.png'></a>
+         </div>
+
+         <div class="menu">
+           <a href="sub01.html">예고</a>
+           <a href="sub02.html">시리즈</a>
+           <a href="sub03.html">게스트</a>
+          </div>
+     </nav>
+
+<!-- 메인 이미지 -->
+     <section id='main_img'>
+
+     </section>
+
+<!-- 콘텐츠영역 -->
+     <section id='contents'>
+
+         <div id='main_contents'>
+         <h3>시리즈</h3>
+
+           <div id='figure'>
+             <div class='features'>
+             <div class="features-inner">
+               <div class="features-item">
+                 <img src='image/c01.jpg'>
+                 <h1>파티셰를 잡아라! 멕시코</h1>
+                 <p>열정만큼은 세계 최고인 멕시코의 아마추어 제빵사들. 그들이 20만 페소를 놓고 벌이는 뜨거운 경쟁. 《파티셰를 잡아라!》 시리즈 사상 가장 화끈한 망작들이 찾아온다!</p>
+           </div>
+
+             <div class="features-item">
+               <img src='image/c02.jpg'>
+               <h1>파티셰를 잡아라! 프랑스</h1>
+               <p>이것은 재앙인가, 재능인가. 그럴싸한 케이크 하나 못 만들지만, 완벽한 웃음을 선사하는 아마추어 파티셰들. 어이없는 실패작 속에 5천 유로를 차지할 작품이 숨어있다!</p>
+             </div>
+
+             <div class="features-item">
+               <img src='image/c03.jpg'>
+               <h1>파티셰를 잡아라! 독일</h1>
+               <p>아무도 그들의 실력을 기대하지 않는다. 참가한 아마추어 파티셰들만 빼고! 최고로 웃긴 엉망진창 베이킹 경연 프로그램. 그래도 누군가는 5천 유로의 주인공이 되겠지?</p>
+              </div>
+             <div class="features-item">
+               <img src='image/c04.jpg'>
+               <h1>파티셰를 잡아라! 스페인</h1>
+               <p>코미디 쇼보다 웃긴 베이킹 경연 쇼. 스페인의 아마추어 제빵사들은 어떤 작품을 탄생시키려나? 케이크 모양은 괴상해도 트로피와 상금 5천 유로의 주인공은 가려진다.</p>
+             </div>
+
+             <div class="features-item">
+               <img src='image/c05.jpg'>
+               <h1>파티셰를 잡아라! 메리 크리스마스!</h1>
+               <p>크리스마스에도 도전을 멈추지 않는 불굴의 아마추어 제빵사들. 재료를 잊어도, 모양이 끔찍해도, 맛이 부족해도, 괜찮답니다. 작품을 공개하는 순간, 재미가 폭발하니까!</p>
+             </div>
+
+             <div class="features-item">
+               <img src='image/c06.jpg'>
+               <h1>파티셰를 잡아라! 시즌1~6</h1>
+               <p>과거는 잊어주세요. 엉망진창 경력을 뒤로하고, 아마추어 제빵사들이 도전을 시작한다. 임무는 ‘걸작’을 구워라, 상금은 1만 달러! 근데 이 난장판, 리얼리티 쇼가 맞나?</p>
+             </div>
+
+             </div>
+             </div>
+           </section>
+
+<!-- 푸터 -->
+     <div class='clear'></div> <!-- float 속성 해제 -->
+     <footer>
+       <div id='footer_box'>
+       <div id='footer_logo'>
+          <img src='image/logo2.png'>
+       </div>
+       <ul id='address'>
+         <li>계원예술대학교 최윤정</li>
+         <li>Email : cyjcmj@naver.com</li>
+       </ul>
+     </div>
+       </footer>
+
+  </body>
+</html>

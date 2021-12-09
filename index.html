@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!-- 22061119 최윤정-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+
+     @font-face {
+        font-family : "My font";
+        src : url("./NanumSquareOTF_acR.otf");
+     }
+      * {
+        margin : 0;
+        padding : 0;
+        background-color : black;
+      }
+      body {
+        font-family : 'My font';
+        font-size : 14px;
+        color : white;
+      }
+      li {
+        list-style-type : none;
+      }
+      .clear {
+        clear : both;
+      }
+
+      nav {
+        margin-top : 15px;
+        height : 130px;
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+        font-family : 'My font';
+        font-size : 20px;
+      }
+      .logo {
+        width : 40%;
+        padding-left : 55px;
+      }
+      .menu {
+        width : 60%;
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+      }
+      .menu a {
+        text-decoration : none;
+        color : red;
+        text-transform : uppercase;
+        font-weight : bold;
+        position : relative;
+      }
+      .menu a:before {
+        content : "";
+        position : absolute;
+        left : 0;
+        top : 100%;
+        width : 0;
+        height : 2px;
+        background-color : black;
+        transition : all 0.5s linear;
+      }
+      .menu a:hover:before {
+        width : 100%;
+        background-color : red;
+      }
+      #main_img {
+        width : 100%;
+        height : 800px;
+        background-image : url('image/nailed.jpg');
+        background-repeat : no-repeat;
+        background-position : top center;
+        margin-top : 20px;
+      }
+
+      footer {
+        width : 100%;
+        height : 100%;
+        margin-top : 30px;
+      }
+      #footer_box {
+        width : 100%;
+        height : 100%;
+        margin : 0 auto;
+        border : solid 1px gray;
+      }
+      #footer_logo {
+        float : left;
+        margin-top : 20px;
+        margin-left : 80px;
+    }
+      #address {
+        float : left;
+        padding : 20px;
+        margin : 0 auto;
+        margin-top : 20px;
+        color : white;
+    }
+    </style>
+
+  </head>
+  <body>
+
+<!-- 내비게이션 -->
+     <nav>
+       <div class="logo">
+         <a href='index.html'><img src='image/logo.png'></a>
+         </div>
+
+         <div class="menu">
+           <a href="sub01.html">예고</a>
+           <a href="sub02.html">시리즈</a>
+           <a href="sub03.html">게스트</a>
+          </div>
+     </nav>
+
+<!-- 메인 이미지 -->
+     <section id='main_img'>
+
+     </section>
+
+<!-- 푸터 -->
+     <div class='clear'></div> <!-- float 속성 해제 -->
+     <footer>
+       <div id='footer_box'>
+       <div id='footer_logo'>
+          <img src='image/logo2.png'>
+       </div>
+       <ul id='address'>
+         <li>계원예술대학교 최윤정</li>
+         <li>Email : cyjcmj@naver.com</li>
+       </ul>
+     </div>
+       </footer>
+
+  </body>
+</html>
